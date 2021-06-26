@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
+        <link rel="stylesheet" href="main.css">
+
+        <title>👤👤👤👤</title>
+    </head>
+
+    <body>
+        <div id="mainHeader">
+            <h1>FLESH</h1>
+            <h2>A POSENET SKETCHBOOK</h2>
+        </div>
+
+        <script> 
+            var cnv;
+
+             function centerCanvas(){
+                 var x = (windowWidth - width) / 2;
+                 var y = (windowHeight - height) / 2;
+                 cnv.position(x, y);
+             }
+             function setup(){
+                 cnv = createCanvas(windowWidth, windowHeight);
+                 centerCanvas();
+                 cnv.style('display', 'block');
+                 cnv.style('z-index', '-9999');
+                 cnv.style('position', 'fixed');
+                 cursor(CROSS);
+                //  canvas.parent('p5Background');
+                //  canvas.position(0, 0);
+             }
+             function draw(){
+                background(255, 10);
+  
+                colorMode(HSB, 360, 100, 100, 255);
+  
+                var hue = random(18, 38);
+                let s = map(mouseY, 0, width, 10, 90);
+                let b = map(mouseX, 0, height, 0, 100);
+  
+                noStroke();
+                fill(hue, s, b);
+                ellipse(mouseX, mouseY, 200, 200);
+             }
+             function windowResized(){
+                 centerCanvas();
+                 resizeCanvas(windowWidth, windowHeight);
+             }
+        </script>
+
+     <br>
+     <br>
+    <div class="center">
+    <a href="blemishPage.html"><img src="assets/images/blemish.png" alt="Blemish sketch page" height="240px" width="320px"></a>
+    <a href="bodyBuilderPage.html"><img src="assets/images/bodyBuilder.png" alt="Body Builder sketch page" height="240px" width="320px"></a>
+    <a href="bruisePage.html"><img src="assets/images/bruise.png" alt="Bruise sketch page" height="240px" width="320px"></a>
+    <a href="humanHybridPage.html"><img src="assets/images/humanHybrid.png" alt="Human hybrid sketch page" height="240px" width="320px"></a>
+    </div>
+    
+    <div>
+        <p><i>noun</i></p>
+        <p class="egText">noun:<b>flesh</b></p>
+        <br>
+        <p>the soft substance consisting of muscle and fat that is found between the skin and bones of a human or an animal.</p>
+        <p class="egText">"she grabbed Anna's arm, her fingers sinking into the flesh"</p>
+        <br>
+        <p>the flesh of an animal, regarded as food.</p>
+        <p class="egText">"the food an animal eats will affect the taste and texture of its flesh"</p>
+        <br>
+        <p>the edible pulpy part of a fruit or vegetable.</p>
+        <p class="egText">"halve the avocados and scrape out the flesh"</p>
+        <br>
+        <p>the skin or surface of the human body with reference to its appearance or sensory properties.</p>
+        <p class="egText">"she gasped as the cold water hit her flesh"</p>
+        <br>
+        <p>the human body and its physical needs and desires, especially as contrasted with the mind or the soul.</p>
+        <p class="egText">noun:<b> the flesh</b></p>
+        <p class="egText">"I have never been one to deny the <b>pleasures of the flesh</b>"</p>
+        <br>
+        <p>a light brownish pink colour.</p>
+        <p class="egText">"acrylic paints in flesh, red, and pink"</p>
+        <br>
+        <br>
+        <p><i>verb</i></p>
+        <p class="egText">verb: <b>flesh</b>; 3rd person present: <b>fleshes</b>; past tense: <b>fleshed</b>; past participle: <b>fleshed</b>; gerund or present participle: <b>fleshing</b></p>
+        <br>
+        <p>put weight on.</p>
+        <p class="egText">"he had fleshed out to a solid 220 pounds"</p>
+        <br>
+        <p>add more details to something which only exists in a draft or outline form.</p>
+        <p class="egText">"the arguments were fleshed out by the minister"</p>
+        <br>
+        <p>stimulate(a hound or hawk) to hunt by feeding it a piece of flesh from a recently killed animal.</p>
+        <p class="egText">"I have fleshed my bloodhound"</p>
+        <br>
+        <p>accustom to bloodshed or warfare.</p>
+        <p class="egText">"he fleshed his troops with enterprises against the enemy's posts"</p>
+        <br>
+        <p>remove the flesh adhering to (a skin or hide).</p>
+        <p class="egText">"chemicals remove the hair and preserving salts, and then the hides are fleshed"</p>
+        <br>
+        <br>
+        <p><i>Phrases:</i></p>
+        <br>
+        <p>all flesh</p>
+        <p class="egText">all human and animal life.</p>
+        <br>
+        <p>go the way of all flesh</p>
+        <p class="egText">die or come to an end.</p>
+        <br>
+        <p>in the flesh</p>
+        <p class="egText">in person or (of a thing) in its actual state.</p>
+        <br>
+        <p>lose flesh</p>
+        <p class="egText">become thinner.</p>
+        <br>
+        <p>make someone's flesh crawl</p>
+        <p class="egText">cause someone to experience an uncomfortable sensation of horror or disgust.</p>
+        <br>
+        <p>one flesh</p>
+        <p class="egText">used to refer to the spiritual and physical union of two people in a relationship, especially marriage.</p>
+        <br>
+        <p>put flesh on something</p>
+        <p class="egText">add more details to something that exists only in a draft or outline form.</p>
+        <br>
+        <p>put on flesh</p>
+        <p class="egText">put on weight.</p>
+        <br>
+        <p>sins of the flesh</p>
+        <p class="egText">sins related to physical indulgence, especially sexual gratification.</p>
+     </div>  
+    </body>
+</html>
