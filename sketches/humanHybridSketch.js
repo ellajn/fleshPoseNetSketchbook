@@ -189,5 +189,4 @@ function poseImages() {
       centerCanvas();
       resizeCanvas(640, 480);
   }
-
 }
